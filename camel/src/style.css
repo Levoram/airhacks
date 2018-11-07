@@ -5,17 +5,26 @@ main{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "gateinfo gateinfo"
+    "navigation content"
+    "status status"
+    
 }
 section{
+    grid-area: content;
     background: lightblue;
 }
 nav{
+    grid-area: navigation;
     background: lightcoral;
 }
 header{
+    grid-area: gateinfo;
     background: lightgreen;
 }
 footer{
+    grid-area: status;
     background: lightpink;
 }
