@@ -12,6 +12,12 @@ export default class FNav extends HTMLElement {
         links.forEach(l => l.onclick = e => this.navigate(e));
         links.forEach(l => console.log(l.hash));
         this.findOutputSlot();
+        window.onhashchange = e => this.locationChanged(e);
+    }
+
+
+    locationChanged(e) { 
+        console.log('location bar changed',e);
     }
 
     findOutputSlot() { 
