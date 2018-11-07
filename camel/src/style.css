@@ -1,8 +1,10 @@
 * {
     --fmg-purle: yellow;
 }
+
 body{
     margin:0px;
+    font-family: "map-regular", arial, helvetica, sans-serif;
 }
 
 @media screen and (max-width: 30em){
