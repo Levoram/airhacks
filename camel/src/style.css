@@ -1,0 +1,21 @@
+body{
+    margin:0px;
+}
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+section{
+    background: lightblue;
+}
+nav{
+    background: lightcoral;
+}
+header{
+    background: lightgreen;
+}
+footer{
+    background: lightpink;
+}
