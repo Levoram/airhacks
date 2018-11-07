@@ -1,6 +1,11 @@
+* {
+    --fmg-purle: yellow;
+}
 body{
     margin:0px;
 }
+
+@media screen and (max-width: 30em){
 main{
     height: 100vh;
     display: grid;
@@ -12,19 +17,35 @@ main{
     "status status"
     
 }
+}
+@media screen and (min-width: 30em){
+    main{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "gateinfo gateinfo"
+        "content content"
+        "navigation navigation"
+        "status status"
+        
+    }
+    }
+    
 section{
     grid-area: content;
-    background: lightblue;
+    background: var(--fmg-purple,orange);
 }
 nav{
     grid-area: navigation;
-    background: lightcoral;
+    background: var(--fmg-purple,gray);
 }
 header{
     grid-area: gateinfo;
-    background: lightgreen;
+    background: var(--fmg-purple,lightblue);
 }
 footer{
     grid-area: status;
-    background: lightpink;
+    background: var(--fmg-purple,lightgreen);
 }
