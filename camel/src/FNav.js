@@ -30,7 +30,6 @@ export default class FNav extends HTMLElement {
         }
     }
 
-
     navigate(e) { 
         const { hash } = e.target;
         const command = hash.substring(1);
